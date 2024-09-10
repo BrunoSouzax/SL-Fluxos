@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SL Fluxos</string>
+    <string name="image_description">Descrição da Imagem</string>
+
+    <string name="image_content_description">Descrição da Imagem</string>
+
+    <string name="navigation_drawer_open">Abrir menu</string>
+    <string name="navigation_drawer_close">Fechar menu</string>
+
+</resources>

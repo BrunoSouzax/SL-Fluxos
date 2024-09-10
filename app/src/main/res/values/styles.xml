@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Define as cores personalizadas da paleta da sua empresa -->
+    <color name="corPrimaria">#3F51B5</color>
+    <color name="corPrimariaEscura">#303F9F</color>
+    <color name="corSecundaria">#FF4081</color>
+    <color name="corFundo">#FFFFFF</color>
+
+    <!-- Define um estilo de tema personalizado -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/corPrimaria</item> <!-- Cor da barra de ação -->
+        <item name="colorPrimaryDark">@color/corPrimariaEscura</item> <!-- Cor da barra de status -->
+        <item name="colorAccent">@color/corSecundaria</item> <!-- Cor de destaque para botões, controles etc. -->
+        <item name="android:windowBackground">@color/corFundo</item> <!-- Cor de fundo da janela -->
+
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:popupMenuStyle">@style/CustomPopupMenu</item>
+        
+        <item name="android:statusBarColor">#000000</item>
+
+    </style>
+
+
+
+    <!-- Estilo personalizado para o menu de overflow -->
+    <style name="CustomPopupMenu" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:overlapAnchor">false</item>
+        <item name="android:popupBackground">@drawable/popup_background</item>
+    </style>
+</resources>
+

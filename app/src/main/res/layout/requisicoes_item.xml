@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- TextViews para exibir as informações do pedido -->
+    <TextView
+        android:id="@+id/textViewUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unidade do Apartamento:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome do Destinatário:"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/textViewDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/textViewTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Descrição:"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewNF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Nota Fiscal:"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewPlantonista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Plantonista:"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Status:"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp"/>
+
+
+
+
+
+    <!-- LinearLayout para os botões -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Botão de Requisição -->
+        <Button
+            android:id="@+id/buttonRequisicao"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Requisição"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- Botão de Entregue -->
+        <Button
+            android:id="@+id/buttonEntregue"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Entregue"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <!-- ImageView para exibir a foto -->
+    <ImageView
+        android:id="@+id/imageViewPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_image"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"/>
+
+</LinearLayout>

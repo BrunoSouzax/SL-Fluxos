@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "727060420226",
+    "project_id": "fluxodeencomendas",
+    "storage_bucket": "fluxodeencomendas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727060420226:android:5d8c2104dcaf811459069b",
+        "android_client_info": {
+          "package_name": "com.souzalima.fluxodeencomendas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9JV-WkEpjUch0YP75A1nvgqqvJQEogt0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

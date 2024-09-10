@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- SearchView para pesquisar encomendas -->
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:queryHint="Buscar por Unidade"
+        android:inputType="number"
+        android:visibility="visible" />
+
+    <!-- Detalhes do pedido pesquisado -->
+    <LinearLayout
+        android:id="@+id/layoutOrderDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/detailTextViewUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unidade do morador:"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif-medium"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/detailTextViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome do destinatário:"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:paddingBottom="2dp" />
+
+        <TextView
+            android:id="@+id/detailTextViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data:"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:paddingBottom="2dp" />
+
+        <TextView
+            android:id="@+id/detailTextViewStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status:"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:paddingBottom="4dp" />
+    </LinearLayout>
+
+    <!-- RecyclerView para exibir a lista resumida de encomendas -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewOrders"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

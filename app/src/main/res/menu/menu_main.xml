@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+        android:id="@+id/action_add"
+        android:title="Adicionar Encomenda"
+        android:icon="@drawable/cadastro" />
+        <item
+        android:id="@+id/action_consultar"
+        android:title="Consultar"
+        android:icon="@drawable/agenda" />
+        <item
+        android:id="@+id/action_requisicoes"
+        android:title="Requisições"
+        android:icon="@drawable/encomendas" />
+        </group>
+
+
+
+        <item android:title="Profile">
+
+            <menu>
+                <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_login"
+                    android:title="Login"
+                    android:icon="@drawable/encomendas" />
+                <item
+                    android:id="@+id/nav_profile"
+                    android:title="Profile"
+                    android:icon="@drawable/encomendas" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:title="Logout"
+                    android:icon="@drawable/encomendas" />
+                </group>
+            </menu>
+
+        </item>
+
+
+
+<item android:title="comunicate">
+
+    <menu>
+
+        <item
+            android:id="@+id/nav_share"
+            android:title="Share"
+            />
+
+        <item
+            android:id="@+id/nav_rate"
+            android:title="Rate Us"
+            />
+
+    </menu>
+
+
+</item>
+
+</menu>
